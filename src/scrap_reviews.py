@@ -53,7 +53,7 @@ def searchQuery(review_link):
     
 
 for j in range(len(phone_links)):
-    print(f'Scaping Review for {mobile_phones[j]} ...')
+    print(f'Scraping Review for {mobile_phones[j]} ...')
     reviews = [] #list to store reviews
     page_no = 0 #intialise page number
 

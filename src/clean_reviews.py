@@ -3,8 +3,20 @@ import pandas as pd
 import numpy as np
 import texthero as hero
 from texthero import preprocessing
+from nltk import stem
+from nltk import tokenize
 
-#review_sentiment_prediction
+
+w_tokenizer = tokenize.WhitespaceTokenizer()
+lemmatizer = stem.WordNetLemmatizer()
+
+
+def lemmatization(text):
+    '''
+    input  : text 
+    output :  lemmazitzed text
+    '''
+    return ' '.join([lemmatizer.lemmatize(word) for word in w_tokenizer.tokenize(text)])
 
 
 if __name__ == "__main__":
@@ -43,6 +55,9 @@ if __name__ == "__main__":
     #clean each phone review in reviews
     for r in reviews:
         r.review = hero.clean(r.review,custom_pipeline)
-
+    
+    #lemmatize reviews:
+    for r in reviews:
+        r.review = r.review.apply(lemmatization)
     #save clean reviews
     joblib.dump(reviews,'../inputs/mobile_reviews.pkl')

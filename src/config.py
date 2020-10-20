@@ -9,3 +9,6 @@ TF_IDF = "../inputs/tf_idf.pkl"
 
 #set path of models
 SVM_MODEL = "../models/svm_model.pkl"
+
+#set path of mobile reviews
+MOBILE_REVIEWS = "../inputs/mobile_reviews.pkl"
