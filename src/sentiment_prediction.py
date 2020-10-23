@@ -20,7 +20,17 @@ def sentiment_val(val):
 
 if __name__ == "__main__":
 
-    
+    mobile_phones = ['redmi note 9',
+                 'oneplus 7t pro',
+                 'nokia 5.3',
+                 'Samsung Galaxy M21',
+                 'Apple iPhone 11',
+                 'Vivo Y20',
+                 'Redmi 8A',
+                 'OPPO A5',
+                 'OnePlus 8',
+                 'Samsung S10'
+                 ]
 
     #list of different mobile reviews
     reviews = joblib.load(config.MOBILE_REVIEWS)

@@ -26,7 +26,7 @@ if __name__ == "__main__":
                  'nokia 5.3',
                  'Samsung Galaxy M21',
                  'Apple iPhone 11',
-                 'Apple iPhone XR',
+                 'Vivo Y20',
                  'Redmi 8A',
                  'OPPO A5',
                  'OnePlus 8',
